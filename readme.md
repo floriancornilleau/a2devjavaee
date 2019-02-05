@@ -2,11 +2,16 @@
 
 
 * src
+  * build.gradle
   * main
     * java
+      * fr.imie
+        * HelloServlet
     * resources
     * webapp
       * WEB-INF
+        * views
+          * hello.jsp
   * test
     * java
     * resources
