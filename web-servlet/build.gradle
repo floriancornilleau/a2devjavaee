@@ -18,3 +18,4 @@ dependencies {
 apply plugin: 'idea'
 apply plugin: 'eclipse'
 apply plugin: 'eclipse-wtp'
+eclipse.wtp.component.libConfigurations += [configurations.runtimeClasspath]
