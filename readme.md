@@ -1,5 +1,14 @@
 
+# MVC en Java EE
 
+* Route : 
+  * soit via /WEB-INF/web.xml
+  * soit par Annotation : @WebServlet
+* Controller : Servlet
+* View : JSP
+* Model : pas de modele à l'étape actuelle
+
+# Structure du projet en Java EE
 
 * src
   * build.gradle
@@ -16,9 +25,28 @@
     * java
     * resources
 
-* Routage : 
-  1) WEB-INF/web.xml
-  2) Annotation : @WebServlet
-* Controleur : Servlet
-* Vue : JSP
-* Model : 
+# MVC avec Spring
+
+* Configuration : Fichier /WEB-INF/web.xml
+* Route : Annotation @RequestMapping
+* Controller : Annnotation @Controller
+* View : JSP
+* Model : pas de modele à l'étape actuelle
+
+# Structure du projet en Java EE
+
+* src
+  * build.gradle
+  * main
+    * java
+      * fr.imie
+        * HelloController
+    * resources
+    * webapp
+      * WEB-INF
+        * web.xml
+        * views
+          * hello.jsp
+  * test
+    * java
+    * resources

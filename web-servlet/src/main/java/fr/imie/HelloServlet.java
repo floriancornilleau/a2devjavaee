@@ -13,9 +13,12 @@ public class HelloServlet extends HttpServlet {
 
 	@Override
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+		// pathinfo pour récupérer le parametre présent dans /hello/toto
 		String pathInfo = request.getPathInfo();
-		System.out.println(pathInfo);
-		request.setAttribute("username", "Toto");
+		String username = pathInfo == null ? "" : pathInfo.substring(1);
+
+		request.setAttribute("username", username);
 		request.getRequestDispatcher("/WEB-INF/views/hello.jsp").forward(request, response);
 	}
 
