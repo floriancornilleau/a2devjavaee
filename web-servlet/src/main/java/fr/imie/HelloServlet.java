@@ -1,4 +1,4 @@
-package imie;
+package fr.imie;
 
 import java.io.IOException;
 
@@ -13,7 +13,8 @@ public class HelloServlet extends HttpServlet {
 
 	@Override
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.getWriter().append("Coucou");
+		request.setAttribute("username", "Toto");
+		request.getRequestDispatcher("index.jsp").forward(request, response);
 	}
 
 }
