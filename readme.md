@@ -100,7 +100,7 @@ contraintes :
 contenu du rendu git : 
 * un formulaire html pour saisir les informations suivantes : 
 prénom, nom, email de une personne
-* +1 point si le formulaire est inclus dans un tableau et html valide
+* +1 point si les champs de saisies sont inclus dans un tableau et html valide
 * une servlet pour exploiter les données saisies
 * une jsp pour afficher les données saisies
 
