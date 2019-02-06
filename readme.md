@@ -34,7 +34,7 @@ Gains de performance et de montée en charge grace aux conteneurs.
       * WEB-INF/
         * views/
           * xyz.jsp
-  * test/
+  * test/ (facultatif pour ce cours)
     * java/
     * resources/
 
@@ -67,6 +67,6 @@ Gains de performance et de montée en charge grace aux conteneurs.
         * spring-servlet.xml
         * views/
           * xyz.jsp
-  * test/
+  * test/ (facultatif pour ce cours)
     * java/
     * resources/

@@ -6,11 +6,12 @@
 </head>
 <body>
 
-formulaire ${toto}
+formulaire ${pers.prenom} ${pers.nom}
 
 <form method="post" action="person" >
 
-<input name="toto" />
+<input name="prenom" /><br/>
+<input name="nom" /><br/>
 <input type="submit" />
 
 </form>
