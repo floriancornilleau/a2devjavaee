@@ -102,4 +102,6 @@ prénom, nom, email de une personne
 * une jsp pour afficher les données saisies
 
 v1 : afficher seulement les dernieres données saisies
-v2 : afficher tous les contacts saisies
+v2 : afficher tous les contacts saisies dans une table
+
+le formulaire et la table peuvent etre au meme endroit, pas obligatoire de faire 2 fichiers (html, jsp)
