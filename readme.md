@@ -70,3 +70,36 @@ Gains de performance et de montée en charge grace aux conteneurs.
   * test/ (facultatif pour ce cours)
     * java/
     * resources/
+
+# Travail en groupe de 2 ou 3 pers
+
+1) rendu d'un projet git avec la structure présentée plus haut (Java EE)
+
+pour rappel : 
+
+* build.gradle
+* src/
+  * main/
+    * java/
+      * fr/imie/
+        * Xyz
+        * XyzServlet
+    * webapp/
+      * WEB-INF/
+        * views/
+          * xyz.jsp
+
+contraintes : 
+* affichages en francais dans les vues
+* code variables en anglais
+* code html valide
+
+contenu du rendu git : 
+* un formulaire html pour saisir les informations suivantes : 
+prénom, nom, email de une personne
+* +1 point si le formulaire est inclus dans un tableau et html valide
+* une servlet pour exploiter les données saisies
+* une jsp pour afficher les données saisies
+
+v1 : afficher seulement les dernieres données saisies
+v2 : afficher tous les contacts saisies
