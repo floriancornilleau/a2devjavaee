@@ -20,6 +20,7 @@ Gains de performance et de montée en charge grace aux conteneurs.
 
 # Structure du projet en Java EE
 
+* .gitignore
 * build.gradle
 * src/
   * main/
@@ -50,6 +51,7 @@ Gains de performance et de montée en charge grace aux conteneurs.
 
 # Structure du projet avec Spring
 
+* .gitignore
 * build.gradle
 * src/
   * main/
@@ -77,6 +79,7 @@ Gains de performance et de montée en charge grace aux conteneurs.
 
 pour rappel : 
 
+* .gitignore
 * build.gradle
 * src/
   * main/
