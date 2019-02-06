@@ -6,7 +6,7 @@
 </head>
 <body>
 
-Hello ${username} !
+<span>Hello ${username} !</span>
 
 </body>
 </html>

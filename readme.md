@@ -1,52 +1,72 @@
 
+# Pourquoi un projet web ?
+
+Cross-Platform : Facilite le développement, la maintenance et le déploiement.
+
+# Pourquoi une application web plutôt qu'un site ?
+
+Mutualiser plusieurs applications sur un même serveur.
+
+# Pourquoi en Java ?
+
+Gains de performance et de montée en charge grace aux conteneurs.
+
 # MVC en Java EE
 
-* Route : 
-  * soit via /WEB-INF/web.xml
-  * soit par Annotation : @WebServlet
+* Route : Annotation @WebServlet
 * Controller : Servlet
+* Model : DAO avec JPA (mais sans Spring)
 * View : JSP
-* Model : pas de modele à l'étape actuelle
 
 # Structure du projet en Java EE
 
-* src
-  * build.gradle
-  * main
-    * java
-      * fr.imie
-        * HelloServlet
-    * resources
-    * webapp
-      * WEB-INF
-        * views
-          * hello.jsp
-  * test
-    * java
-    * resources
+* build.gradle
+* src/
+  * main/
+    * java/
+      * fr/imie/
+        * Xyz
+        * XyzServlet
+    * resources/
+      * META-INF/
+        * persistence.xml
+    * webapp/
+      * WEB-INF/
+        * views/
+          * xyz.jsp
+  * test/
+    * java/
+    * resources/
 
 # MVC avec Spring
 
-* Configuration : Fichier /WEB-INF/web.xml
+* Configuration : 
+  * /WEB-INF/web.xml
+  * /WEB-INF/spring-servlet.xml
 * Route : Annotation @RequestMapping
-* Controller : Annnotation @Controller
+* Controller : Annotation @Controller
+* Model : Repository avec Spring Data JPA
 * View : JSP
-* Model : pas de modele à l'étape actuelle
 
-# Structure du projet en Java EE
+# Structure du projet avec Spring
 
-* src
-  * build.gradle
-  * main
-    * java
-      * fr.imie
-        * HelloController
-    * resources
-    * webapp
-      * WEB-INF
+* build.gradle
+* src/
+  * main/
+    * java/
+      * fr/imie/
+        * Xyz
+        * XyzController
+        * XyzRepository
+    * resources/
+      * META-INF/
+        * persistence.xml
+    * webapp/
+      * WEB-INF/
         * web.xml
-        * views
-          * hello.jsp
-  * test
-    * java
-    * resources
+        * spring-servlet.xml
+        * views/
+          * xyz.jsp
+  * test/
+    * java/
+    * resources/
